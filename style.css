@@ -1,0 +1,223 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  /* Support Section */
+  .support-section {
+    padding: 40px 0;
+  }
+  .support-section h2 {
+    text-align: center;
+    
+  }
+  .support-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 30px;
+    flex: 1;
+    min-width: 250px; /* Ensures cards don't shrink too much */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Authentication Form */
+  .auth-section {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .auth-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .auth-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .auth-container label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .auth-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .auth-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+ /* فوتر */
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #0071e3;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #0071e3;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('fonts/IRANSans.woff2') format('woff2'),
+         url('fonts/IRANSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact, .footer-social, .footer-newsletter, .footer-faq {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-notice {
+        font-size: 1em;
+    }
+}
